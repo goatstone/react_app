@@ -1,1 +1,4 @@
 node_modules
+build/main.css
+build/main.js
+build/vendors.js

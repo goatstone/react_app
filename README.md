@@ -1,10 +1,30 @@
+
 Another Starter React Application.
+
+
 
 I have created another React Starter applicaion for my own use.
 
-I have borrowed from this starter application:
+This application implements a build system as well as a few basic components and a component messaging system.
+
+
+
+The Components:
+
+A main Menu that can be shown and hidden.
+
+A component to display messages to the user.
+
+A component that resembles a music player with symbols for 
+play, stop, fast forward and reverse.
+
+A component that displays a list of items.
+
+
+
+I using code from this starter application:
 
 	https://github.com/christianalfoni/react-app-boilerplate
 
 
-  - Jose Collas 6.26.2015
+  - Jose Collas 6.2015
