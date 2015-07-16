@@ -1,6 +1,6 @@
 /* Spinner.js Jose Collas : 7.2015 */
 var React = require('react');
-var Radium = require('Radium');
+var Radium = require('radium');
 var Spinner = React.createClass({
   render: function () {
     return (
@@ -16,7 +16,7 @@ var rotatePKF = Radium.keyframes({
   },
   '100%': {
     transform: 'rotateY(360deg)' 
-  },
+  }
 }); 
 var spinnerStyles = {
   inner: {

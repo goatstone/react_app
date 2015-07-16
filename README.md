@@ -1,12 +1,10 @@
 
-Another Starter React Application.
-
+###Another Starter React Application.
 
 
 I have created another React Starter applicaion for my own use.
 
 This application implements a build system as well as a few basic components and a component messaging system.
-
 
 
 The Components:
@@ -20,9 +18,10 @@ play, stop, fast forward and reverse.
 
 A component that displays a list of items.
 
+A series of CSS animations : 
+   spinner, bouncer, slow flasher, glower, color shifter, ufoer, clouder 
 
-
-I using code from this starter application:
+I am using code from this starter application:
 
 	https://github.com/christianalfoni/react-app-boilerplate
 
