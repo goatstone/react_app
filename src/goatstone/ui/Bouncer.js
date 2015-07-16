@@ -17,7 +17,7 @@ var rotatePKF = Radium.keyframes({
     backgroundColor: 'rgba(10, 200, 255, 0.4)' 
   }, 
   '100%': {
-     top:'80%',
+     top:'65%',
      transform: 'scale(2)',
      backgroundColor: 'rgba(10, 200, 255, 0.9)' 
   } 
