@@ -138,13 +138,13 @@ gulp.task('deploy', function () {
   browserifyTask({
     development: false,
     src: './src/goatstone/main.js',
-    dest: './dist'
+    dest: './dist/js'
   });
   
   cssTask({
     development: false,
     src: './src/goatstone/styles/**/*.css',
-    dest: './dist'
+    dest: './dist/css'
   });
 
 });
