@@ -1,11 +1,12 @@
-/* goatstone/ui/Bouncer.js : Jose Collas : 7.2015 */
+/* goatstone/ui/Glower.js Jose Collas : 7.2015 */
 var React = require('react');
 var Radium = require('radium');
 var animStates = ['0', 'infinite'];
 var animState = animStates[0];
 var rotatePKF;
 var style;
-var Bouncer = React.createClass({
+var cStyle;
+var Glower = React.createClass({
   componentDidMount: function(){
       this.props.pb.subscribe('play', function(a){
         animState = (animState === '0')? 'infinite': '0';
@@ -16,38 +17,42 @@ var Bouncer = React.createClass({
   }, 
   render: function () {
     return (
-      <div style={style}>{String.fromCharCode(2000)}</div>
+      <div style={style}>
+      <svg>
+      	<circle style={cStyle} cx="50" cy="50" r="49" />
+      </svg>
+      </div>
     );
   }
 });
-Bouncer = Radium(Bouncer);
+Glower = Radium(Glower);
 // pulse key frames
 rotatePKF = Radium.keyframes({
   '0%': {
-    top:'0%',
     transform: 'scale(1)',
-    backgroundColor: 'rgba(100, 200, 55, 0.4)' 
+    backgroundColor: 'rgba(255, 20, 0, 0.5)' 
   }, 
   '100%': {
-     top:'65%',
-     transform: 'scale(2)',
-     backgroundColor: 'rgba(100, 200, 55, 0.9)' 
+     transform: 'scale(1.1)',
+     backgroundColor: 'rgba(200, 255, 25, 0.9)' 
   } 
 }); 
+cStyle = {
+	fill:'rgba(250, 100, 0, 0.1)'  
+}
 style = {
   	position:'absolute',
     textAlign:'center',
-    top: '0%',
-    left: '9%',
+    top: '20%',
+    left: '25%',
     background: 'rgba(100,100,255, 0.5)',
     borderRadius: '50px',
-    height: '10px',
-    width: '10px',
+    height: '100px',
+    width: '100px',
     fontSize: '17px',
-    animation: rotatePKF + ' 4s ease-in 0s infinite alternate none',
+    animation: rotatePKF + ' 2s ease-in 0s infinite alternate none',
     boxShadow: '19px 16px 27px rgba(20, 110, 200, 0.5)',
     color: 'orange',
-    padding: '32px 10px 20px 10px', 
     zIndex: '100'
 };
-module.exports = Bouncer;
+module.exports = Glower;

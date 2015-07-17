@@ -1,6 +1,7 @@
 /* goatstone/ui/Message.js Jose Collas : 7.2015 */
 var React = require('react');
 var Radium = require('radium');
+var style;
 var Message = React.createClass({
   handleClick: function(){
   },
@@ -16,15 +17,15 @@ var Message = React.createClass({
   },  
   render: function () {
     return (
-      <div style={style} onClick={this.handleClick}>
-      <h2 style={{marginTop:0, marginBottom:0}}>React Radium Examples</h2> 
-      <i style={{color:'orange', marginLeft:10 }}>Goatstone : 2015</i>
+      <div style={style} onClick={this.handleClick} tabIndex="200">
+        <h2 style={{marginTop:0, marginBottom:0}}>React Radium Examples</h2> 
+        <i style={{color:'orange', marginLeft:10 }}>Goatstone : 2015</i>
       </div>
     );
   }
 });
 Message = Radium(Message);
-var style = {
+style = {
   	position:'absolute',
     bottom: 15,
     right: 15,
