@@ -39,7 +39,7 @@ var Clouder = React.createClass({
   render: function () {
     return (
       <div style={this.props.style}>  
-	      <svg>
+	      <svg style={{width:133, height:100, backgroundColor:'transparent'}}>
 	      	<circle style={this.props.cStyle} cx="50" cy="50" r="20" />
 	      	<circle style={this.props.cStyle} cx="80" cy="50" r="50" />
 	      	<circle style={this.props.cStyle} cx="90" cy="50" r="40" />

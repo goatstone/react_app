@@ -16,7 +16,7 @@ var Bouncer = React.createClass({
   }, 
   render: function () {
     return (
-      <div style={style}>{String.fromCharCode(2000)}</div>
+      <div style={style}>{String.fromCharCode(8634)}</div>
     );
   }
 });

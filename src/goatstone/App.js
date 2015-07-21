@@ -1,15 +1,15 @@
-/* goatstone/App.js : Jose Collas : 7.2015 */
+/* goatstone/App.js : Jose Collas : 7.2015    */ 
 var React = require('react');
 var Radium = require('radium');
-var Spinner = require('./ui/Spinner.js');
-var Bouncer = require('./ui/Bouncer.js');
-var OverflowIcon = require('./ui/OverflowIcon.js');
-var Menu = require('./ui/Menu.js');
-var Message = require('./ui/Message.js');
-var PlayControl = require('./ui/PlayControl.js');
-var Glower = require('./ui/Glower.js');
-var Clouder = require('./ui/Clouder.js');
-var PB = require('./pubsub/PubSub.js');
+var Spinner = require('./ui/Spinner');
+var Bouncer = require('./ui/Bouncer');
+var OverflowIcon = require('./ui/OverflowIcon');
+var Menu = require('./ui/Menu');
+var Message = require('./ui/Message');
+var PlayControl = require('./ui/PlayControl');
+var Glower = require('./ui/Glower');
+var Clouder = require('./ui/Clouder');
+var PB = require('./pubsub/PubSub');
 var App = React.createClass({
 	getDefaultProps: function () {		
     	return { 
@@ -24,13 +24,12 @@ var App = React.createClass({
 	render: function() {
 		return (
 			<div style={this.props.style}> 
- 				<Clouder pb={PB} x={60} y={5}   /> 				
- 				<Clouder pb={PB} x={30} y={130} /> 				
+ 				<Menu pb={PB} />
+ 				<Clouder pb={PB} x={60} y={150}   /> 				
+ 				<Clouder pb={PB} x={30} y={180} /> 				
  				<Bouncer pb={PB} />
  				<OverflowIcon pb={PB}/>
- 				<Menu pb={PB} />
  				<Message pb={PB} />
- 				<PlayControl pb={PB} />
  				<Glower pb={PB} />
 				<Spinner pb={PB} />			
  			</div>
