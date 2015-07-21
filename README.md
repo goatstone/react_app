@@ -6,6 +6,7 @@ I have created another React Starter applicaion for my own use.
 
 This application implements a build system as well as a few basic components and a component messaging system.
 
+(http://react.goatstone.biz)[http://react.goatstone.biz]
 
 The Components:
 
